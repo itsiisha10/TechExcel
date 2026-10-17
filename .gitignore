@@ -1,0 +1,21 @@
+# Dependencies
+
+client/node_modules/
+
+# Production build
+
+client/dist/
+
+# Environment variables
+
+client/.env
+client/.env.*
+
+# Keep example environment configuration
+
+!client/.env.example
+
+# Debug logs
+
+client/npm-debug.log*
+client/yarn-debug.log*
