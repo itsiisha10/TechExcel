@@ -68,6 +68,7 @@ a:focus-visible {
 .navbar h1,
 .navbar .logo {
     margin: 0;
+    transform: translateX(15px);
     font-family: "Space Grotesk", sans-serif;
     font-size: 29px;
     font-weight: 700;
