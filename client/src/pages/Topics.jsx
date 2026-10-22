@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 const topics = [
     {
         id: "dsa-cpp",
@@ -65,71 +64,58 @@ const topics = [
         skills: ["Git", "Commits", "Branches", "Pull Requests"],
     },
 ];
-
 function Topics() {
     return (
         <main className="topics-page">
             <section className="topics-hero">
                 <span className="section-eyebrow">YOUR LEARNING STARTS HERE</span>
-
                 <h1>
                     Explore. Learn.
                     <br />
                     <span>Build something amazing.</span>
                 </h1>
-
                 <p>
                     Choose a learning path, explore useful resources, and develop
                     practical skills one topic at a time.
                 </p>
-
                 <div className="topics-count">
                     <strong>07</strong>
                     <span>learning paths to explore</span>
                 </div>
             </section>
-
             <section className="topics-content">
                 <div className="topics-heading">
                     <div>
                         <span className="section-eyebrow">ALL LEARNING PATHS</span>
                         <h2>Find your next skill</h2>
                     </div>
-
                     <Link to="/" className="text-link">
                         ← Back to Home
                     </Link>
                 </div>
-
                 <div className="learning-grid">
                     {topics.map((topic, index) => (
                         <article className="learning-card" key={topic.id}>
                             <div className="card-topline">
                                 <span className="card-icon">{topic.icon}</span>
                                 <span className="card-number">
-                                    {String(index + 1).padStart(2, "0")}
+                                    `{String(index + 1).padStart(2, "0")}``
                                 </span>
                             </div>
-
-                            <span className="card-category">{topic.category}</span>
-
+                            <span className="card-category">`{topic.category}`</span>
                             <h3>{topic.title}</h3>
-
-                            <p className="card-description">{topic.description}</p>
-
+                            <p className="card-description">`{topic.description}`</p>
                             <div className="topic-tags">
                                 {topic.skills.map((skill) => (
                                     <span key={skill}>{skill}</span>
                                 ))}
                             </div>
-
                             <div className="card-footer">
                                 <span className="level-label">Learning roadmap</span>
-
                                 <Link
-                                    to={`/topic/${topic.id}`}
+                                    to={/topic/`${topic.id}`}
                                     className="card-link"
-                                    aria-label={`Explore ${topic.title}`}
+                                    aria-label={Explore `${topic.title}`}
                                 >
                                     Explore <span>↗</span>
                                 </Link>
@@ -141,5 +127,4 @@ function Topics() {
         </main>
     );
 }
-
 export default Topics;

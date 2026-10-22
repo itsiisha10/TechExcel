@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-
 const learningTopics = {
     "dsa-cpp": {
         title: "DSA with C++",
@@ -12,7 +11,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=DSA+with+C%2B%2B+beginner+tutorial",
         reading: "https://www.geeksforgeeks.org/data-structures/",
     },
-
     "dsa-python": {
         title: "DSA with Python",
         category: "DATA STRUCTURES & ALGORITHMS",
@@ -24,7 +22,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=DSA+with+Python+beginner+tutorial",
         reading: "https://docs.python.org/3/tutorial/",
     },
-
     frontend: {
         title: "Frontend Web Development",
         category: "WEB DEVELOPMENT",
@@ -36,7 +33,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=frontend+web+development+full+course+beginner",
         reading: "https://developer.mozilla.org/en-US/docs/Learn_web_development",
     },
-
     backend: {
         title: "Backend Web Development",
         category: "WEB DEVELOPMENT",
@@ -48,7 +44,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=Node.js+Express+backend+development+beginner",
         reading: "https://nodejs.org/en/learn",
     },
-
     fullstack: {
         title: "Full Stack Development",
         category: "FULL STACK",
@@ -60,7 +55,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=full+stack+web+development+beginner+course",
         reading: "https://developer.mozilla.org/en-US/docs/Learn_web_development",
     },
-
     databases: {
         title: "Databases with Prisma & PostgreSQL",
         category: "DATABASE MANAGEMENT",
@@ -72,7 +66,6 @@ const learningTopics = {
         youtube: "https://www.youtube.com/results?search_query=PostgreSQL+Prisma+ORM+tutorial+beginner",
         reading: "https://www.prisma.io/docs",
     },
-
     github: {
         title: "Git & GitHub",
         category: "DEVELOPER TOOLS",
@@ -85,11 +78,9 @@ const learningTopics = {
         reading: "https://docs.github.com/en/get-started",
     },
 };
-
 function TopicPage() {
     const { id } = useParams();
     const topic = learningTopics[id];
-
     if (!topic) {
         return (
             <main className="topic-page">
@@ -104,26 +95,20 @@ function TopicPage() {
             </main>
         );
     }
-
     return (
         <main className="topic-page">
             <section className="topic-hero">
                 <Link to="/topics" className="back-link">
                     ← All Learning Paths
                 </Link>
-
                 <div className={`topic-icon ${topic.color}`}>
                     {topic.icon}
                 </div>
-
                 <p className="topic-category">{topic.category}</p>
-
                 <h1>
                     Master <span>{topic.title}</span>
                 </h1>
-
                 <p className="topic-description">{topic.description}</p>
-
                 <a
                     href={topic.youtube}
                     target="_blank"
@@ -133,14 +118,12 @@ function TopicPage() {
                     Start Learning ↗
                 </a>
             </section>
-
             <section className="topic-content">
                 <div className="section-heading">
                     <p className="topic-category">YOUR LEARNING JOURNEY</p>
                     <h2>What you'll learn</h2>
                     <p>Build your skills one concept at a time.</p>
                 </div>
-
                 <div className="skill-grid">
                     {topic.skills.map((skill, index) => (
                         <article className="skill-card" key={skill}>
@@ -156,14 +139,12 @@ function TopicPage() {
                     ))}
                 </div>
             </section>
-
             <section className="resource-section">
                 <div className="section-heading">
                     <p className="topic-category">CURATED FOR YOU</p>
                     <h2>Choose your learning style</h2>
                     <p>Learn by watching or explore written documentation.</p>
                 </div>
-
                 <div className="resource-grid">
                     <a
                         className="resource-card video-resource"
@@ -182,7 +163,6 @@ function TopicPage() {
                         </div>
                         <span className="resource-arrow">↗</span>
                     </a>
-
                     <a
                         className="resource-card reading-resource"
                         href={topic.reading}
@@ -202,7 +182,6 @@ function TopicPage() {
                     </a>
                 </div>
             </section>
-
             <section className="topic-footer">
                 <p>SMALL STEPS. REAL SKILLS. BIGGER POSSIBILITIES.</p>
                 <h2>Your next breakthrough starts here.</h2>
@@ -211,7 +190,9 @@ function TopicPage() {
                 </Link>
             </section>
         </main>
-    );
-}
+    )
 
+}
 export default TopicPage;
+
+
