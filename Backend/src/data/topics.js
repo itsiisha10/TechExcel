@@ -46,7 +46,8 @@ studyResources: []
     youtubeLinks: [
         {
             title: "Apna College",
-            url: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt"
+            url: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+            thumbnailUrl: "https://i.ytimg.com/vi/VTLCoHnyACE/hqdefault.jpg"
         },
         {
             title: "College Wallah",
@@ -76,11 +77,13 @@ studyResources: []
     youtubeLinks: [
         {
             title: "CodeWithHarry",
-            url: "https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"
+            url: "https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg",
+            thumbnailUrl: "https://i.ytimg.com/vi/7wnove7K-ZQ/hqdefault.jpg"
         },
         {
             title: "Telusko",
-            url: "https://youtube.com/playlist?list=PLsyeobzWxl7omDoEYrrf3oXvXxa6MPgek&si=2OJJxKJPyj"
+            url: "https://youtube.com/playlist?list=PLsyeobzWxl7omDoEYrrf3oXvXxa6MPgek&si=2OJJxKJPyj",
+            thumbnailUrl: "https://i.ytimg.com/vi/YZkyL-f-YXY/hqdefault.jpg"
         }
     ],
     studyResources: [
@@ -158,7 +161,8 @@ studyResources: []
     youtubeLinks: [
         {
             title: "CodeWithHarry",
-            url: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=RXbywFJMCREEJ9Lc"
+            url: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=RXbywFJMCREEJ9Lc",
+            thumbnailUrl: "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg"
         },
         {
             title: "Intellipaat",
@@ -177,6 +181,31 @@ studyResources: []
     ]
 },
 
+{
+    id: "databases",
+    title: "Databases with Prisma and PostgreSQL",
+    description: "Learn relational database basics with PostgreSQL and work with data in Prisma.",
+    youtubeLinks: [
+        {
+            title: "Learn PostgreSQL - Full Course for Beginners (freeCodeCamp)",
+            url: "https://www.youtube.com/watch?v=qw--VYLpxG4"
+        },
+        {
+            title: "Prisma ORM + Prisma Postgres: 5-Minutes Quickstart (Prisma)",
+            url: "https://www.youtube.com/watch?v=O1S0ax7GlL8"
+        }
+    ],
+    studyResources: [
+        {
+            title: "PostgreSQL Official Tutorial",
+            url: "https://www.postgresql.org/docs/current/tutorial.html"
+        },
+        {
+            title: "Prisma ORM Quickstart with PostgreSQL",
+            url: "https://www.prisma.io/docs/v7/prisma-orm/quickstart/postgresql"
+        }
+    ]
+},
 {
     id: "github",
     title: "GitHub Tutorials",
@@ -206,3 +235,5 @@ studyResources: []
 ];
 
 export default topics;
+
+

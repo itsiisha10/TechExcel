@@ -99,12 +99,12 @@ function Topics() {
                             <div className="card-topline">
                                 <span className="card-icon">{topic.icon}</span>
                                 <span className="card-number">
-                                    `{String(index + 1).padStart(2, "0")}``
+                                    {String(index + 1).padStart(2, "0")}
                                 </span>
                             </div>
-                            <span className="card-category">`{topic.category}`</span>
+                            <span className="card-category">{topic.category}</span>
                             <h3>{topic.title}</h3>
-                            <p className="card-description">`{topic.description}`</p>
+                            <p className="card-description">{topic.description}</p>
                             <div className="topic-tags">
                                 {topic.skills.map((skill) => (
                                     <span key={skill}>{skill}</span>
@@ -113,9 +113,9 @@ function Topics() {
                             <div className="card-footer">
                                 <span className="level-label">Learning roadmap</span>
                                 <Link
-                                    to={/topic/`${topic.id}`}
+                                    to={`/topic/${topic.id}`}
                                     className="card-link"
-                                    aria-label={Explore `${topic.title}`}
+                                    aria-label={`Explore ${topic.title}`}
                                 >
                                     Explore <span>↗</span>
                                 </Link>

@@ -19,7 +19,7 @@ const topics = [
                 description:
                     "Learn programming concepts and problem-solving through video lessons.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=DSA+with+C%2B%2B+tutorial"
+                url: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt"
             },
             {
                 title: "C++ Documentation",
@@ -51,7 +51,7 @@ const topics = [
                 description:
                     "Explore video lessons on data structures and algorithms with Python.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=DSA+with+Python+tutorial"
+                url: "https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"
             },
             {
                 title: "Python Documentation",
@@ -83,7 +83,7 @@ const topics = [
                 description:
                     "Explore tutorials covering frontend development.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=frontend+web+development+tutorial"
+                url: "https://youtu.be/kkOuRJ69BRY"
             },
             {
                 title: "MDN Web Development Guides",
@@ -115,7 +115,7 @@ const topics = [
                 description:
                     "Explore tutorials on backend development with Node.js.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=Node.js+Express+backend+tutorial"
+                url: "https://youtu.be/OeEHJgzqS1k"
             },
             {
                 title: "Node.js Documentation",
@@ -147,7 +147,7 @@ const topics = [
                 description:
                     "Explore full-stack development tutorials.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=full+stack+web+development+tutorial"
+                url: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
             },
             {
                 title: "Full Stack Open",
@@ -179,7 +179,7 @@ const topics = [
                 description:
                     "Explore tutorials on relational databases and SQL.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=PostgreSQL+SQL+tutorial"
+                url: "https://www.youtube.com/watch?v=qw--VYLpxG4"
             },
             {
                 title: "Prisma Documentation",
@@ -211,7 +211,7 @@ const topics = [
                 description:
                     "Explore tutorials on Git and GitHub workflows.",
                 type: "video",
-                url: "https://www.youtube.com/results?search_query=Git+and+GitHub+tutorial+for+beginners"
+                url: "https://youtu.be/apGV9Kg7ics"
             },
             {
                 title: "GitHub Documentation",
