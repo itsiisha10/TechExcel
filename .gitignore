@@ -1,21 +1,51 @@
-# Dependencies
+# ============================================================
+# TechExcel - Root .gitignore
+# ============================================================
 
+# --- Dependencies ---
+node_modules/
 client/node_modules/
+Backend/node_modules/
 
-# Production build
-
+# --- Production Builds ---
 client/dist/
+Backend/dist/
 
-# Environment variables
-
+# --- Environment Variables & Secrets ---
+.env
+.env.*
 client/.env
 client/.env.*
+Backend/.env
+Backend/.env.*
+*.env
 
-# Keep example environment configuration
-
+# Keep example environment files (safe templates without real values)
+!.env.example
 !client/.env.example
+!Backend/.env.example
 
-# Debug logs
+# --- Secret & Credential Files ---
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+credentials/
 
-client/npm-debug.log*
-client/yarn-debug.log*
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
